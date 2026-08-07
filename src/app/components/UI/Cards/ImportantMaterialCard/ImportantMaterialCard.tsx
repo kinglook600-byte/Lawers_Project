@@ -1,0 +1,30 @@
+import type { Icomentaters } from "./lib/types/typeImportantMaterialCard";
+
+
+const ImportantMaterial = (commenter: Icomentaters) => {
+  return (
+    <div className="mx-2 lg:my-15 lg:ml-9 sm:mx-10 2xl:px-4 md:w-120 md:mx-50 xl:w-160 xl:mx-10">
+          <div className="shadow-md w-fit lg:shadow-md lg:w-fit lg:p-5">
+            <img
+              src={commenter.commenter.image}
+              alt=""
+               className="w-130 h-70 sm:w-130 sm:h-80 lg:w-200 rounded-sm"
+            />
+
+            <div className="p-5">
+              <h2 className="text-[13px] sm:text-[15px] lg:text-[17px] font-semibold md:text-[18px]">
+                {commenter.commenter.name}
+              </h2>
+
+              <p className="text-gray-500 text-[13px] lg:mt-2 lg:text-[16px] md:text-[19px]">{commenter.commenter.date}</p>
+
+              <p className="text-[10px] sm:text-[15px]  lg: mt-4 leading-7 md:font-bold">
+                {commenter.commenter.text}
+              </p>
+            </div>
+          </div>
+        </div>
+  );
+};
+
+export default ImportantMaterial;
