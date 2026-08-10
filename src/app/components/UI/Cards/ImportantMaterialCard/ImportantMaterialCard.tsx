@@ -1,7 +1,14 @@
 import type { Icomentaters } from "./lib/types/typeImportantMaterialCard";
 
 
+
+
 const ImportantMaterial = (commenter: Icomentaters) => {
+  //  const [curr, setCurr] = useState(0);
+
+  // const prev = () => setCurr((prevCurr) => (prevCurr === 0 ? importantmaterial.length - 1 : prevCurr - 1));
+  // const next = () => setCurr((prevCurr) => (prevCurr === importantmaterial.length - 1 ? 0 : prevCurr + 1));
+
   return (
     <div className="mx-2 lg:my-15 lg:ml-9 sm:mx-10 2xl:px-4 md:w-120 md:mx-50 xl:w-160 xl:mx-10">
           <div className="shadow-md w-fit lg:shadow-md lg:w-fit lg:p-5">

@@ -1,6 +1,7 @@
+
 import importantMaterial from "../../../../DataBase/importantMaterial";
 import ImportantMaterial from "../../../UI/Cards/ImportantMaterialCard/ImportantMaterialCard";
-import HomeButttonsSlider from "../HomeButtonsSlider/HomeButttonsSlider";
+// import HomeButttonsSlider from "../HomeButtonsSlider/HomeButttonsSlider";
 
 const HomeImportantMaterialSection = () => {
   return (
@@ -18,10 +19,10 @@ const HomeImportantMaterialSection = () => {
       </div>
       <div className="mx-3 lg:grid grid-cols-2 lg:grid-cols-2 xl:flex ">
         {importantMaterial.map((important, i) => (
-          <ImportantMaterial commenter={important} key={i} />
+          <ImportantMaterial commenter={important} key={i}/>
         ))}
       </div>
-      <HomeButttonsSlider/>
+      {/* <HomeButttonsSlider/> */}
     </div>
   );
 };
