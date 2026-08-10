@@ -3,10 +3,6 @@ import type { ICard } from "./lib/types/typeCardBlock";
 
 
 function Card(cards: ICard) {
-
-
-
-
   return (
       <div>
         <div className="p-2 mx-15 w-fit lg:mx-20 flex justify-center lg:p-6 items-center flex-col shadow-md sm:mx-25 2xl:gap-4 2xl:h-80"> 
@@ -17,6 +13,7 @@ function Card(cards: ICard) {
           </p>
       </div>
       </div>
+      
   );
 }
 
