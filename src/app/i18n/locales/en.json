@@ -1,0 +1,79 @@
+{
+    "buttons_link": {
+        "order": "Order a call"
+    },
+    "Lawers_firm": {
+        "Human rights defender": "Human rights defender",
+        "law company": "Law firm"
+    },
+    "navbar": {
+        "Services": "Services",
+        "About Firm": "About Firm",
+        "Lawers": "Lawyers",
+        "Reviews": "Reviews",
+        "News": "News",
+        "Contacts": "Contacts"
+    },
+    "header_text": {
+        "We provide a full range of services.": "We provide a full range of services.",
+        "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard filler.": "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard filler."
+    },
+    "button_services": {
+        "Our services": "Our services"
+    },
+    "CardBlock": [
+        {
+            "id": 1,
+            "icon": "public/icon/agreement.png",
+            "title": "Personal bankruptcy",
+            "text": "The bankruptcy procedure for individuals in Russia is regulated by law."
+        },
+        {
+            "id": 2,
+            "icon": "public/icon/agreement.png",
+            "title": "Transaction Support",
+            "text": "Initiating, structuring, and executing transactions, and achieving results—that is precisely what we do every day."
+        },
+        {
+            "id": 3,
+            "icon": "public/icon/agreement.png",
+            "title": "Corporate disputes",
+            "text": "Corporate disputes — disputes related to the establishment of, management of, or participation in a legal entity."
+        },
+        {
+            "id": 4,
+            "icon": "public/icon/agreement.png",
+            "title": "Real Estate and Construction",
+            "text": "We provide advice on various real estate matters, including urban planning regulations and land relations."
+        },
+        {
+            "id": 5,
+            "icon": "public/icon/agreement.png",
+            "title": "Refund of insurance premiums",
+            "text": "To obtain a refund of the insurance premium, you must have the policyholder's passport and the original insurance policy ready."
+        },
+        {
+            "id": 6,
+            "icon": "public/icon/agreement.png",
+            "title": "Tax Law and Disputes",
+            "text": "Support during tax audits at any stage, document analysis, and defense in tax disputes."
+        }
+    ],
+    "CommentatersBlock": [
+        {
+            "id": 1,
+            "image": "public/image/comenters.png",
+            "job": "IT Consulting LLC",
+            "name": "Anastasia Loginova",
+            "comment": "Many people think that Lorem Ipsum is just a random collection of pseudo-Latin words, but that is not entirely the case. Its roots trace back to a passage of classical Latin from 45 BC—that is, more than two millennia ago."
+        },
+        {
+            "id": 2,
+            "image": "public/image/comenter.png",
+            "job": "JSC PROMARSH",
+            "name": "Sergey Makarov",
+            "comment": ""
+        }
+    ]
+
+}
