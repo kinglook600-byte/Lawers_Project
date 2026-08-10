@@ -14,7 +14,7 @@ const HomeImportantMaterialSection = () => {
         <p className=" mt-4 mb-5 text-center mx-20 text-[16px] md:text-[20px] 2xl:max-w-4xl 2xl:mb-10 ">
           Давно выяснено, что при оценке дизайна и композиции читаемый текст
           мешает сосредоточиться. Lorem Ipsum используют потому, что тот
-          обеспечивает более или менее стандартное заполнение шаблона.
+       
         </p>
       </div>
       <div className="mx-3 lg:grid grid-cols-2 lg:grid-cols-2 xl:flex ">
