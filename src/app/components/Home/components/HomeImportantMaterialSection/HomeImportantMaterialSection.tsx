@@ -1,5 +1,6 @@
 import importantMaterial from "../../../../DataBase/importantMaterial";
 import ImportantMaterial from "../../../UI/Cards/ImportantMaterialCard/ImportantMaterialCard";
+import HomeButttonsSlider from "../HomeButtonsSlider/HomeButttonsSlider";
 
 const HomeImportantMaterialSection = () => {
   return (
@@ -20,6 +21,7 @@ const HomeImportantMaterialSection = () => {
           <ImportantMaterial commenter={important} key={i} />
         ))}
       </div>
+      <HomeButttonsSlider/>
     </div>
   );
 };
