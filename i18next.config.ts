@@ -5,7 +5,7 @@ export default {
     "fr"
   ],
   extract: {
-    input: "tsx",
-    output: "language"
+    input: "src/**/*.tsx",
+    output: "src/locales/{{language}}/translation.json"
   }
 }
