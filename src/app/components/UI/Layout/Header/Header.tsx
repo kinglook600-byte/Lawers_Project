@@ -4,7 +4,7 @@ const Header = () => {
   const { i18n, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleLanguage = () => {
+const handleLanguage = () => {
     const newLanguage = i18n.language === "ru" ? "en" : "ru"
     i18n.changeLanguage(newLanguage)
   }
@@ -42,11 +42,11 @@ const Header = () => {
         <div className="flex mx-2 justify-between items-center my-5 sm:mx-9 2xl:px-4 2xl:mx-24">
           <div>
             <h2 className="ml-3 text-blue-500 text-[12px] tracking-[4px] font-bold uppercase sm:text-[18px] lg:text-[24px]">
-              {t('key2', 'Правозащитник')}
+              {t('Humanrightsdefender', 'Правозащитник')}
             </h2>
 
             <p className="ml-3 mt-2 text-white font-bold text-sm text-[13px] sm:text-[15px] lg:text-[20px] 2xl:text-[16px]">
-              {t('key3', 'Юридическая компания')}
+              {t('Lawfirm', 'Юридическая компания')}
             </p>
           </div>
 
@@ -55,37 +55,37 @@ const Header = () => {
             <ul className="flex items-center gap-5">
               <li>
                 <a className=" text-[20px] text-white 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('key4', 'Услуги')}
+                  {t('services', 'Услуги')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition duration-100" href="#">
-                  {t('key5', 'О компании')}
+                  {t('AboutFirm', 'О компании')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('key6', 'Юристы')}
+                  {t('lawers', 'Юристы')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('key7', 'Отзывы')}
+                  {t('reviews', 'Отзывы')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('key8', 'Новости')}
+                  {t('news', 'Новости')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('key9', 'Контакты')}
+                  {t('contacts', 'Контакты')}
                 </a>
               </li>
             </ul>
@@ -102,37 +102,37 @@ const Header = () => {
             <ul className="flex justify-end items-end flex-col gap-5">
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('key4', 'Услуги')}
+                  {t('navbar', 'Услуги')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('key5', 'О компании')}
+                  {t('navbar', 'О компании')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('key6', 'Юристы')}
+                  {t('navbar', 'Юристы')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('key7', 'Отзывы')}
+                  {t('navbar', 'Отзывы')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('key8', 'Новости')}
+                  {t('navbar', 'Новости')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('key9', 'Контакты')}
+                  {t('navbar', 'Контакты')}
                 </a>
               </li>
             </ul>
@@ -140,21 +140,21 @@ const Header = () => {
         )}
         <div className="flex flex-col justify-center items-center text-center min-h-[55vh] my-10 2xl:min-h-[65vh] 2xl:px-4">
           <h2 className="text-[18px] text-white uppercase sm:text-[25px] md:text-[24px] tracking-[4px] 2xl:text-[35px]">
-            {t('key10', 'Оказываем весь комплекс')}
+            {t('Weprovidefull', 'Оказываем весь комплекс')}
           </h2>
 
           <h1 className="text-blue-500 text-[17px] tracking-[2px] sm:tracking-[6px] sm:text-[34px] md:tracking-[10px] 2xl:text-[90px] 2xl:tracking-[5px]">
-            {t('key11', 'Юридических услуг')}
+            {t('legalServices', 'Юридических услуг')}
           </h1>
 
           <div className="max-w-xl">
             <p className="text-white text-[14px] my-10 mx-10 text-center sm:text-[20px] md:text-[25px] lg:text-[25px] md:mx-5 2xl:text-center">
-              {t('loremIpsum', 'Давно выяснено, что при оценке дизайна и композиции читаемый текст\r\n              мешает сосредоточиться. Lorem Ipsum используют потому, что тот\r\n              обеспечивает более или менее стандартное заполнение.')}
+              {t('textInfoHeader', 'Давно выяснено, что при оценке дизайна и композиции читаемый текст\r\n              мешает сосредоточиться. Lorem Ipsum используют потому, что тот\r\n              обеспечивает более или менее стандартное заполнение.')}
             </p>
           </div>
 
           <button className="bg-white hover:bg-blue-600 p-3 rounded-xs animate-pulse hover:text-white transition duration-1000">
-            {t('key12', 'Наши услуги')}
+            {t('buttonService', 'Наши услуги')}
           </button>
         </div>
 

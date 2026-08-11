@@ -6,16 +6,16 @@ const Footer = () => {
       <div className="mx-2 xl:flex items-center xl:justify-between border-b-2 border-gray-700 p-4 xl:mx-10 gap-10 my-4">
         <div>
           <h2 className="text-2xl text-blue-500">
-            {t('key2', 'Правозащитник')}
+            {t('Humanrightsdefender', 'Правозащитник')}
           </h2>
           <p className="text-white font-bold my-3 text-[20px]">
-            {t('key3', 'Юридическая компания')}
+            {t('Lawfirm', 'Юридическая компания')}
           </p>
         </div>
 
         <div className="hidden lg:block w-210">
           <p className="hidden lg:block text-white text-base leading-7">
-            {t('key13', 'Предварительные выводы неутешительны: синтетическое тестирование,\r\n            а также свежий взгляд на привычные вещи — безусловно открывает\r\n            новые горизонты для экономической целесообразности принимаемых\r\n            решений.')}
+            {t('footerText', 'Предварительные выводы неутешительны: синтетическое тестирование, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической целесообразности принимаемых решений.')}
           </p>
         </div>
       </div>
@@ -48,7 +48,7 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-[10px] lg:text-[13px]">
-                {t('key15', 'Запись на консультацию')}
+                {t('MemoryCamera', 'Запись на консультацию')}
               </p>
 
               <h2 className="text-white text-base lg:text-[13px]">
@@ -66,7 +66,7 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-sm lg:text-[13px]">
-                {t('key16', 'Корреспонденция')}
+                {t('correspondence', 'Корреспонденция')}
               </p>
 
               <h2 className="text-white text-base lg:text-[13px]">
@@ -79,13 +79,13 @@ const Footer = () => {
           <ul className="space-y-3">
             <li>
               <a href="#" className="text-white lg:text-[13px] 2xl:hover:text-blue-600">
-                {t('key4', 'Услуги')}
+                {t('services', 'Услуги')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('key5', 'О компании')}
+                {t('AboutFirm', 'О компании')}
               </a>
             </li>
 
@@ -97,19 +97,19 @@ const Footer = () => {
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('key7', 'Отзывы')}
+                {t('reviews', 'Отзывы')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('key18', 'Полезные материалы')}
+                {t('importantMaterial', 'Полезные материалы')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('key19', 'Благотворительность')}
+                {t('charity', 'Благотворительность')}
               </a>
             </li>
           </ul>
@@ -124,32 +124,32 @@ const Footer = () => {
 
             <div>
               <h2 className="text-white font-bold text-lg">
-                {t('key20', 'Миронов Александр')}
+                {t('Alex', 'Миронов Александр')}
               </h2>
 
               <p className="text-gray-400 text-sm">
-                {t('key21', 'Ведущий юрист')}
+                {t('Lead', 'Ведущий юрист')}
               </p>
             </div>
           </div>
 
           <p className="text-white hidden lg:block my-2 text-[10px] w-75">
-            {t('key22', 'Есть над чем задуматься: тщательные исследования конкурентов\r\n            разоблачены. Идейные соображения высшего порядка, а также\r\n            перспективное планирование играет важную роль.')}
+            {t('textAlex', 'Есть над чем задуматься: тщательные исследования конкурентов\r\n            разоблачены. Идейные соображения высшего порядка, а также\r\n            перспективное планирование играет важную роль.')}
           </p>
 
           <button className="bg-blue-600 text-white w-40 p-2 text-[14px] lg:px-6 py-3 my-5 rounded-lg lg:w-60">
-            {t('key23', 'Задать вопрос юристу')}
+            {t('askQuestion', 'Задать вопрос юристу')}
           </button>
         </div>
       </div>
       <div className="border-t border-gray-600 mx-1 lg:mt-10 pt-6 my-5 lg:mx-10">
         <div className="flex flex-col">
           <p className="text-white text-sm">
-            {t('2023', 'Все права защищены, 2023')}
+            {t('allRights', 'Все права защищены, 2023')}
           </p>
 
           <p className="text-white text-sm">
-            {t('key24', 'Политика обработки персональных данных')}
+            {t('Politics', 'Политика обработки персональных данных')}
           </p>
         </div>
       </div>
