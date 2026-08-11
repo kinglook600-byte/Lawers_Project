@@ -1,8 +1,7 @@
 export default {
   locales: [
     "en",
-    "de",
-    "fr"
+    "tj",
   ],
   extract: {
     input: "src/**/*.tsx",
