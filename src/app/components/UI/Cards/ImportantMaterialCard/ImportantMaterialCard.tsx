@@ -1,4 +1,5 @@
 import type { Icomentaters } from "./lib/types/typeImportantMaterialCard";
+import { useTranslation } from 'react-i18next'
 
 
 
@@ -8,6 +9,8 @@ const ImportantMaterial = (commenter: Icomentaters) => {
 
   // const prev = () => setCurr((prevCurr) => (prevCurr === 0 ? importantmaterial.length - 1 : prevCurr - 1));
   // const next = () => setCurr((prevCurr) => (prevCurr === importantmaterial.length - 1 ? 0 : prevCurr + 1));
+
+  const { t } = useTranslation()
 
   return (
     <div className="mx-2 lg:my-15 lg:ml-9 sm:mx-10 2xl:px-4 md:w-120 md:mx-50 xl:w-160 xl:mx-10">
@@ -20,13 +23,13 @@ const ImportantMaterial = (commenter: Icomentaters) => {
 
             <div className="p-5">
               <h2 className="text-[13px] sm:text-[15px] lg:text-[17px] font-semibold md:text-[18px]">
-                {commenter.commenter.name}
+                {t("name", commenter.commenter.name)}
               </h2>
 
-              <p className="text-gray-500 text-[13px] lg:mt-2 lg:text-[16px] md:text-[19px]">{commenter.commenter.date}</p>
+              <p className="text-gray-500 text-[13px] lg:mt-2 lg:text-[16px] md:text-[19px]">{t("date", commenter.commenter.date)}</p>
 
               <p className="text-[10px] sm:text-[15px]  lg: mt-4 leading-7 md:font-bold">
-                {commenter.commenter.text}
+                {t("text",commenter.commenter.text)}
               </p>
             </div>
           </div>
