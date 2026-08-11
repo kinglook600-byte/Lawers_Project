@@ -1,5 +1,141 @@
 {
     "order": "Order call",
     "buttonChangeLanguage": "Change Language",
-    ""
+    "Humanrightsdefender": "Human rights defender",
+    "Lawfirm": "Law firm",
+    "services": "Services",
+    "AboutFirm": "About Firm",
+    "lawers": "Lawers",
+    "reviews": "Reviews",
+    "news": "News",
+    "contacts": "Contacts",
+    "navbar": {
+        "services": "Services",
+        "aboutFirm": "About Firm",
+        "lawers": "Lawers",
+        "reviews": "Reviews",
+        "news": "News",
+        "contacts": "Contacts"
+    },
+    "Weprovidefull": "We provide a full range of services.",
+    "legalServices" : "Legal services",
+    "textInfoHeader" : "It has long been established that readable text distracts from the evaluation of design and composition. Lorem Ipsum is used because it provides a more or less standard filler.",
+    "buttonService" : "Our Services",
+
+    "BlockCard": [
+        {
+            "title": "Personal bankruptcy",
+            "text": "The personal bankruptcy procedure in Russia is regulated by law."
+        },
+        {
+            "title": "Transaction Support",
+            "text": "Initiating, structuring, and executing transactions, and achieving results—that is precisely what we do every day."
+        },
+        {
+            "title": "Corporate disputes",
+            "text": "Corporate disputes are disputes related to the establishment of a legal entity, its management, or participation in it."
+        },
+        {
+            "title": "Real Estate and Construction",
+            "text": "We provide advice on various real estate matters, including urban planning regulations and land relations."
+        },
+        {
+            "title": "Refund of insurance premiums",
+            "text": "To obtain a refund of the insurance premium, you must have the policyholder's passport and the original insurance policy ready."
+        },
+        {
+            "title": "Tax Law and Disputes",
+            "text": "Support during tax audits at any stage, document analysis, and defense in tax disputes."
+        }
+    ],
+
+    "Law_Firm" : "Law firm",
+    "Humanrights" : "Human rights defender",
+    "textLawers" : "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard filler.",
+    "textLawers" : "There are many versions of Lorem Ipsum, but most contain modifications that aren't always acceptable—such as humorous insertions or words that don't even remotely resemble Latin. If you need Lorem Ipsum for a serious project, you certainly wouldn't want a joke hidden in the middle of a paragraph.",
+    "textLawers" : "Over the years, the Lorem Ipsum text has spawned many versions. Some versions appeared by mistake, while others were created intentionally (for example, humorous variants).",
+    "storyFirm" : "Company History",
+    "certificate" : "Certificates",
+
+    "Our_Lawers" : "Our lawers",
+    "infoLawers" : "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard way to fill a template.",
+
+    "LawersCard": [
+        {
+            "name": "Polina Alekseevna Goryunova",
+            "info": "International law attorney"
+        },
+        {
+            "name": "Mironov Alexander Germanovich",
+            "info": "Credit attorney, banking lawyer"
+        },
+        {
+            "name": "Shestakova Elizaveta Egorovna",
+            "info": "Legal Consultant"
+        },
+        {
+            "name": "Arkhipov Maxim Konstantinovich",
+            "info": "Corporate Lawyer"
+        }
+    ],
+
+    "whatSaysAboutUs": "What our clients say about us",
+
+    "ComentersCard": [
+        {
+            "job": "IT Consulting LLC",
+            "name": "Loginova Anastasia",
+            "comment": "Many people think that Lorem Ipsum is just a random collection of pseudo-Latin words, but that is not entirely the case. Its roots trace back to a passage of classical Latin from 45 BC—that is, more than two millennia ago."
+        },
+        {
+            "job": "JSC PROMARSH",
+            "name": "Sergey Makarov",
+            "comment": "If you need Lorem Ipsum for a serious project, you certainly wouldn't want a joke hidden in the middle of a paragraph."
+        }
+    ],
+
+    "TextImportantMaterial": "Useful Resources",
+
+    "TextImportant": "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard way to fill a template.",
+
+    "ImportantMaterialCard": [
+         {
+            "name": "A truly joyful sound: the whisper of the perennial leaders.",
+            "date": "April 24, 2023",
+            "text": "The preliminary conclusions are disappointing: synthetic testing—along with a fresh perspective on familiar matters—undoubtedly opens up new horizons regarding the economic viability of the decisions being made."
+        },
+        {
+            "name": "A truly joyful sound: the whisper of the perennial leaders.",
+            "date": "April 24, 2023",
+            "text": "The preliminary conclusions are disappointing: synthetic testing—along with a fresh perspective on familiar matters—undoubtedly opens up new horizons regarding the economic viability of the decisions being made."
+        },
+        {
+            "name": "The cohesion of the team of professionals continues to amaze.",
+            "date": "Feb. 2, 2023",
+            "text": "Modern technologies have reached a level where the focus on a socially oriented national project fosters improvements in the conditions that drive such engagement."
+        }
+    ],
+
+    "footerText": "The preliminary conclusions are disappointing: synthetic testing—along with a fresh perspective on familiar matters—undoubtedly opens up new horizons regarding the economic viability of the decisions being made.",
+
+    "OurAddres": "Our address",
+    "addres": "40 Budapeshtskaya Ave., Odintsovo",
+    "MemoryCamera": "Schedule a consultation",
+
+    "correspondence": "Correspondence",
+    "certificates": "Certificates",
+
+    "importantMaterial": "Useful Resources",
+    "charity" : "Charity",
+
+    "Alex" : "Alexander Mironov",
+
+    "Lead" : "Lead Lawyer",
+
+    "textAlex": "There is food for thought here: in-depth competitor research has been laid bare. High-level conceptual considerations and forward-looking planning play a significant role.",
+    "askQuestion": "Ask a lawyer a question",
+    "allRights": "All rights reserved, 2023",
+    "Politics": "Personal Data Processing Policy",
+
+    "ButtonCard": "All news"
 }
