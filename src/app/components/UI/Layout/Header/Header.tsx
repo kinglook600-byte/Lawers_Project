@@ -46,7 +46,7 @@ const handleLanguage = () => {
             </h2>
 
             <p className="ml-3 mt-2 text-white font-bold text-sm text-[13px] sm:text-[15px] lg:text-[20px] 2xl:text-[16px]">
-              {t('Lawfirm', 'Юридическая компания')}
+              {t('Lawfirm')}
             </p>
           </div>
 
@@ -55,37 +55,37 @@ const handleLanguage = () => {
             <ul className="flex items-center gap-5">
               <li>
                 <a className=" text-[20px] text-white 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('services', 'Услуги')}
+                  {t('services')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition duration-100" href="#">
-                  {t('AboutFirm', 'О компании')}
+                  {t('AboutFirm')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('lawers', 'Юристы')}
+                  {t('lawers')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('reviews', 'Отзывы')}
+                  {t('reviews')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('news', 'Новости')}
+                  {t('news')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
-                  {t('contacts', 'Контакты')}
+                  {t('contacts')}
                 </a>
               </li>
             </ul>
@@ -102,37 +102,37 @@ const handleLanguage = () => {
             <ul className="flex justify-end items-end flex-col gap-5">
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar', 'Услуги')}
+                  {t('navbar')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar', 'О компании')}
+                  {t('navbar')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar', 'Юристы')}
+                  {t('navbar')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar', 'Отзывы')}
+                  {t('navbar')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar', 'Новости')}
+                  {t('navbar')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar', 'Контакты')}
+                  {t('navbar')}
                 </a>
               </li>
             </ul>
@@ -140,21 +140,21 @@ const handleLanguage = () => {
         )}
         <div className="flex flex-col justify-center items-center text-center min-h-[55vh] my-10 2xl:min-h-[65vh] 2xl:px-4">
           <h2 className="text-[18px] text-white uppercase sm:text-[25px] md:text-[24px] tracking-[4px] 2xl:text-[35px]">
-            {t('Weprovidefull', 'Оказываем весь комплекс')}
+            {t('Weprovidefull')}
           </h2>
 
           <h1 className="text-blue-500 text-[17px] tracking-[2px] sm:tracking-[6px] sm:text-[34px] md:tracking-[10px] 2xl:text-[90px] 2xl:tracking-[5px]">
-            {t('legalServices', 'Юридических услуг')}
+            {t('legalServices')}
           </h1>
 
           <div className="max-w-xl">
             <p className="text-white text-[14px] my-10 mx-10 text-center sm:text-[20px] md:text-[25px] lg:text-[25px] md:mx-5 2xl:text-center">
-              {t('textInfoHeader', 'Давно выяснено, что при оценке дизайна и композиции читаемый текст\r\n              мешает сосредоточиться. Lorem Ipsum используют потому, что тот\r\n              обеспечивает более или менее стандартное заполнение.')}
+              {t('textInfoHeader')}
             </p>
           </div>
 
           <button className="bg-white hover:bg-blue-600 p-3 rounded-xs animate-pulse hover:text-white transition duration-1000">
-            {t('buttonService', 'Наши услуги')}
+            {t('buttonService')}
           </button>
         </div>
 

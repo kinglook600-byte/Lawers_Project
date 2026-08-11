@@ -6,16 +6,16 @@ const Footer = () => {
       <div className="mx-2 xl:flex items-center xl:justify-between border-b-2 border-gray-700 p-4 xl:mx-10 gap-10 my-4">
         <div>
           <h2 className="text-2xl text-blue-500">
-            {t('Humanrightsdefender', 'Правозащитник')}
+            {t('Humanrightsdefender')}
           </h2>
           <p className="text-white font-bold my-3 text-[20px]">
-            {t('Lawfirm', 'Юридическая компания')}
+            {t('Lawfirm')}
           </p>
         </div>
 
         <div className="hidden lg:block w-210">
           <p className="hidden lg:block text-white text-base leading-7">
-            {t('footerText', 'Предварительные выводы неутешительны: синтетическое тестирование, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической целесообразности принимаемых решений.')}
+            {t('footerText')}
           </p>
         </div>
       </div>
@@ -30,7 +30,7 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-[13px] lg:text-[13px]">
-                {t('key14', 'Наш адрес')}
+                {t('key14')}
               </p>
 
               <h2 className="text-white text-[13px] lg:text-base">
@@ -48,7 +48,7 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-[10px] lg:text-[13px]">
-                {t('MemoryCamera', 'Запись на консультацию')}
+                {t('MemoryCamera')}
               </p>
 
               <h2 className="text-white text-base lg:text-[13px]">
@@ -66,7 +66,7 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-sm lg:text-[13px]">
-                {t('correspondence', 'Корреспонденция')}
+                {t('correspondence')}
               </p>
 
               <h2 className="text-white text-base lg:text-[13px]">
@@ -79,37 +79,37 @@ const Footer = () => {
           <ul className="space-y-3">
             <li>
               <a href="#" className="text-white lg:text-[13px] 2xl:hover:text-blue-600">
-                {t('services', 'Услуги')}
+                {t('services')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('AboutFirm', 'О компании')}
+                {t('AboutFirm')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('key17', 'Сертификаты')}
+                {t('key17')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('reviews', 'Отзывы')}
+                {t('reviews')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('importantMaterial', 'Полезные материалы')}
+                {t('importantMaterial')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                {t('charity', 'Благотворительность')}
+                {t('charity')}
               </a>
             </li>
           </ul>
@@ -119,37 +119,37 @@ const Footer = () => {
             <img
               className="rounded-full w-16 h-16"
               src="public/image/lawer_img.png"
-              alt={t('key20', 'Миронов Александр')}
+              alt={t('Mironov')}
             />
 
             <div>
               <h2 className="text-white font-bold text-lg">
-                {t('Alex', 'Миронов Александр')}
+                {t('Alex')}
               </h2>
 
               <p className="text-gray-400 text-sm">
-                {t('Lead', 'Ведущий юрист')}
+                {t('Lead')}
               </p>
             </div>
           </div>
 
           <p className="text-white hidden lg:block my-2 text-[10px] w-75">
-            {t('textAlex', 'Есть над чем задуматься: тщательные исследования конкурентов\r\n            разоблачены. Идейные соображения высшего порядка, а также\r\n            перспективное планирование играет важную роль.')}
+            {t('textAlex')}
           </p>
 
           <button className="bg-blue-600 text-white w-40 p-2 text-[14px] lg:px-6 py-3 my-5 rounded-lg lg:w-60">
-            {t('askQuestion', 'Задать вопрос юристу')}
+            {t('askQuestion')}
           </button>
         </div>
       </div>
       <div className="border-t border-gray-600 mx-1 lg:mt-10 pt-6 my-5 lg:mx-10">
         <div className="flex flex-col">
           <p className="text-white text-sm">
-            {t('allRights', 'Все права защищены, 2023')}
+            {t('allRights')}
           </p>
 
           <p className="text-white text-sm">
-            {t('Politics', 'Политика обработки персональных данных')}
+            {t('Politics')}
           </p>
         </div>
       </div>
