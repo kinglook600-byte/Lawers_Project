@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation, withTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 const Header = () => {
   const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,8 @@ const Header = () => {
              href="#"
             className="mr-5 text-blue-400 animate-bounce shadow-md text-[10px] font-bold sm:text-[20px] "
           >
-            {t('key', 'Заказать звонок')}
+            {t('order')}
+            {/* <button>Change Language</button> */}
           </a>
         </div>
 
@@ -165,6 +166,6 @@ const Header = () => {
     </header>
   );
 }; 
-const HeaderTranslation = withTranslation()(Header)
+// const HeaderTranslation = withTranslation()(Header)
 
-export default HeaderTranslation;
+export default Header;
