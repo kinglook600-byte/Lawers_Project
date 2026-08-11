@@ -8,8 +8,8 @@ i18next
   .use(resourcesToBackend((language: string) => import(`./locales/${language}/translation.json`)))
   .init({
     returnEmptyString: false,
-
-    fallbackLng: 'en',
+    lng: "en",
+    fallbackLng: 'ru',
     defaultNS: 'translation',
   })
 
