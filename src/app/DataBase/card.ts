@@ -37,7 +37,7 @@ const card: ICardBlock[] = [
       icon: "public/icon/agreement.png",
       title: "Налоговое право и споры",
       text: "Сопровождение налоговых проверок на любой стадии, анализ документов и защита при налоговых спорах.",
-    },
+    }
   ]
 
  export default card 
