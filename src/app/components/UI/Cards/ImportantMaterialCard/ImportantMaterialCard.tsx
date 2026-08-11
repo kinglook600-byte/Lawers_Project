@@ -23,13 +23,13 @@ const ImportantMaterial = (commenter: Icomentaters) => {
 
             <div className="p-5">
               <h2 className="text-[13px] sm:text-[15px] lg:text-[17px] font-semibold md:text-[18px]">
-                {t("name", commenter.commenter.name)}
+                {t(commenter.commenter.name)}
               </h2>
 
-              <p className="text-gray-500 text-[13px] lg:mt-2 lg:text-[16px] md:text-[19px]">{t("date", commenter.commenter.date)}</p>
+              <p className="text-gray-500 text-[13px] lg:mt-2 lg:text-[16px] md:text-[19px]">{t(commenter.commenter.date)}</p>
 
               <p className="text-[10px] sm:text-[15px]  lg: mt-4 leading-7 md:font-bold">
-                {t("text",commenter.commenter.text)}
+                {t(commenter.commenter.text)}
               </p>
             </div>
           </div>

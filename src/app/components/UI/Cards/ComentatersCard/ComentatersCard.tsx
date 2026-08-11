@@ -11,7 +11,7 @@ const Comentaters = (comments: IComentatersform) => {
         <img src={comments.comments.image} className="w-10 h-13 sm:w-15 sm:h-17 lg:w-20 lg:h-20" alt="" />
           <div className="flex flex-col mx-4">
             <p className="text-[10px] lg:text-[15px]">{t("job", comments.comments.name)}</p>
-            <h1 className="text-[14px] lg:text-[20px] md:text-[22px]">{t("name", comments.comments.name)}</h1>
+            <h1 className="text-[14px] lg:text-[20px] md:text-[22px]">{t(comments.comments.name)}</h1>
           </div>
       </div>
       <div>
@@ -19,7 +19,7 @@ const Comentaters = (comments: IComentatersform) => {
       </div>
       </div>
       <p className="p-2 text-[14px] lg:text-[15px] md:text-[17px]">
-        {t("comment",comments.comments.comment)}
+        {t(comments.comments.comment)}
       </p>
     </div>
   )
