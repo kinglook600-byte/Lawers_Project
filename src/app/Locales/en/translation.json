@@ -1,5 +1,3 @@
 {
-    "buttonOrder": {
-        "orderCall": "Order call"
-    }
+    "order": "Order call"
 }
