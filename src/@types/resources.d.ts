@@ -5,4 +5,9 @@ export default interface Resources {
       orderCall: "Order Call";
     };
   };
+  ru: {
+    translation: {
+      orderCall: "Заказать звонок"
+    }
+  }
 }
