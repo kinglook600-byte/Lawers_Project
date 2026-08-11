@@ -1,22 +1,21 @@
+import { useTranslation } from 'react-i18next'
 const Footer = () => {
+  const { t } = useTranslation()
   return (
     <footer className="bg-black py-10 px-4">
       <div className="mx-2 xl:flex items-center xl:justify-between border-b-2 border-gray-700 p-4 xl:mx-10 gap-10 my-4">
         <div>
           <h2 className="text-2xl text-blue-500">
-            Правозащитник
+            {t('key2', 'Правозащитник')}
           </h2>
           <p className="text-white font-bold my-3 text-[20px]">
-            Юридическая компания
+            {t('key3', 'Юридическая компания')}
           </p>
         </div>
 
         <div className="hidden lg:block w-210">
           <p className="hidden lg:block text-white text-base leading-7">
-            Предварительные выводы неутешительны: синтетическое тестирование,
-            а также свежий взгляд на привычные вещи — безусловно открывает
-            новые горизонты для экономической целесообразности принимаемых
-            решений.
+            {t('key13', 'Предварительные выводы неутешительны: синтетическое тестирование,\r\n            а также свежий взгляд на привычные вещи — безусловно открывает\r\n            новые горизонты для экономической целесообразности принимаемых\r\n            решений.')}
           </p>
         </div>
       </div>
@@ -31,11 +30,11 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-[13px] lg:text-[13px]">
-                Наш адрес
+                {t('key14', 'Наш адрес')}
               </p>
 
               <h2 className="text-white text-[13px] lg:text-base">
-                г. Одинцово, пр. Будапештсткая, 40
+                {t('40', 'г. Одинцово, пр. Будапештсткая, 40')}
               </h2>
             </div>
           </div>
@@ -49,11 +48,11 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-[10px] lg:text-[13px]">
-                Запись на консультацию
+                {t('key15', 'Запись на консультацию')}
               </p>
 
               <h2 className="text-white text-base lg:text-[13px]">
-                +7 (922) 022-94-82
+                {t('79220229482', '+7 (922) 022-94-82')}
               </h2>
             </div>
           </div>
@@ -67,7 +66,7 @@ const Footer = () => {
 
             <div>
               <p className="text-white text-sm lg:text-[13px]">
-                Корреспонденция
+                {t('key16', 'Корреспонденция')}
               </p>
 
               <h2 className="text-white text-base lg:text-[13px]">
@@ -80,37 +79,37 @@ const Footer = () => {
           <ul className="space-y-3">
             <li>
               <a href="#" className="text-white lg:text-[13px] 2xl:hover:text-blue-600">
-                Услуги
+                {t('key4', 'Услуги')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                О компании
+                {t('key5', 'О компании')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                Сертификаты
+                {t('key17', 'Сертификаты')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                Отзывы
+                {t('key7', 'Отзывы')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                Полезные материалы
+                {t('key18', 'Полезные материалы')}
               </a>
             </li>
 
             <li>
               <a href="#" className="text-white lg:text-[13px] hover:text-blue-600 transition">
-                Благотворительность
+                {t('key19', 'Благотворительность')}
               </a>
             </li>
           </ul>
@@ -120,39 +119,37 @@ const Footer = () => {
             <img
               className="rounded-full w-16 h-16"
               src="public/image/lawer_img.png"
-              alt="Миронов Александр"
+              alt={t('key20', 'Миронов Александр')}
             />
 
             <div>
               <h2 className="text-white font-bold text-lg">
-                Миронов Александр
+                {t('key20', 'Миронов Александр')}
               </h2>
 
               <p className="text-gray-400 text-sm">
-                Ведущий юрист
+                {t('key21', 'Ведущий юрист')}
               </p>
             </div>
           </div>
 
           <p className="text-white hidden lg:block my-2 text-[10px] w-75">
-            Есть над чем задуматься: тщательные исследования конкурентов
-            разоблачены. Идейные соображения высшего порядка, а также
-            перспективное планирование играет важную роль.
+            {t('key22', 'Есть над чем задуматься: тщательные исследования конкурентов\r\n            разоблачены. Идейные соображения высшего порядка, а также\r\n            перспективное планирование играет важную роль.')}
           </p>
 
           <button className="bg-blue-600 text-white w-40 p-2 text-[14px] lg:px-6 py-3 my-5 rounded-lg lg:w-60">
-            Задать вопрос юристу
+            {t('key23', 'Задать вопрос юристу')}
           </button>
         </div>
       </div>
       <div className="border-t border-gray-600 mx-1 lg:mt-10 pt-6 my-5 lg:mx-10">
         <div className="flex flex-col">
           <p className="text-white text-sm">
-            Все права защищены, 2023
+            {t('2023', 'Все права защищены, 2023')}
           </p>
 
           <p className="text-white text-sm">
-            Политика обработки персональных данных
+            {t('key24', 'Политика обработки персональных данных')}
           </p>
         </div>
       </div>
