@@ -1,14 +1,22 @@
 import { useState } from "react";
 import { useTranslation } from 'react-i18next'
 const Header = () => {
-  const { t } = useTranslation()
+  const { i18n, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleLanguage = () => {
+    const newLanguage = i18n.language === "ru" ? "en" : "ru"
+    i18n.changeLanguage(newLanguage)
+  }
 
   return (
     <header className="min-h-screen bg-[url('public/image/header_back.png')] bg-cover bg-center">
       <div className="bg-black/90 min-h-screen opacity-90 2xl:opacity-80">
-        <div className="flex justify-between items-center sm:px-4 2xl:mx-20">
+        <div className="flex justify-between items-center sm:px-4 2xl:mx-27">
           <div className="flex items-center gap-2 my-3 sm:gap-5 2xl:my-10">
+            <div>
+              <button onClick={handleLanguage} className="text-white font-bold ">{t("buttonChangeLanguage")}</button>
+            </div>
             <div className="my-5 ml-5 flex items-center mx-3 gap-3 sm:mx-6 2xl:gap-2">
               <img src="public/icon/phone.png" alt="" />
               <p className= " text-white text-[14px] sm:text-[20px] md:text-[23px] 2xl:text-sm 2xl:text-[20px]">
@@ -26,8 +34,7 @@ const Header = () => {
              href="#"
             className="mr-5 text-blue-400 animate-bounce shadow-md text-[10px] font-bold sm:text-[20px] "
           >
-            {t('order')}
-            {/* <button>Change Language</button> */}
+            {t('order', 'Заказать звонок')}
           </a>
         </div>
 
