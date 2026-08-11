@@ -18,11 +18,11 @@ const HomeLawerInfo = () => {
               </p>
               <br />
               <p>
-                {t('textLawers')}
+                {t('textLawers_2')}
               </p>
               <br />
               <p>
-                {t('textLawers')}
+                {t('textLawers_3')}
               </p>
             </div>
           </div>
