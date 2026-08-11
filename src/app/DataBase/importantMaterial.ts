@@ -2,8 +2,8 @@ import type { IComentater } from "../components/UI/Cards/ImportantMaterialCard/l
 
 
 const importantmaterial: IComentater[] = [
-    {id: 1, image: "public/image/buildings.png", name: "Воистину радостный звук: шёпот бессменных лидеров", date: "24 апр. 2023 г.", text: "Предварительные выводы неутешительны: синтетическое тестирование, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической целесообразности принимаемых решений."},
-    {id: 2, image: "public/image/paris.png", name: "Воистину радостный звук: шёпот бессменных лидеров", date: "24 апр. 2023 г", text: "Предварительные выводы неутешительны: синтетическое тестирование, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической целесообразности принимаемых решений."},
-    {id: 3, image: "public/image/friendly.png", name: "Сплочённость команды профессионалов продолжает удивлять", date: "02 фев. 2023 г.", text: "Современные технологии достигли такого уровня, что курс на социально-ориентированный национальный проект способствует повышению качества соответствующих условий активизации"},
+    { id: 1, image: "public/image/buildings.png", name: "ImportantMaterialCard.1.name", date: "ImportantMaterialCard.1.date", text: "ImportantMaterialCard.1.text" },
+    { id: 2, image: "public/image/paris.png", name: "ImportantMaterialCard.2.name", date: "ImportantMaterialCard.2.date", text: "ImportantMaterialCard.2.text" },
+    { id: 3, image: "public/image/friendly.png", name: "ImportantMaterialCard.3.name", date: "ImportantMaterialCard.3.date", text: "ImportantMaterialCard.3.text" },
 ]
-export default  importantmaterial
+export default importantmaterial
