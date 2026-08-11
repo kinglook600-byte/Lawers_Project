@@ -21,6 +21,7 @@
     "legalServices" : "Legal services",
     "textInfoHeader" : "It has long been established that readable text distracts from the evaluation of design and composition. Lorem Ipsum is used because it provides a more or less standard filler.",
     "buttonService" : "Our Services",
+    
 
     "BlockCard": [
         {
@@ -137,5 +138,8 @@
     "allRights": "All rights reserved, 2023",
     "Politics": "Personal Data Processing Policy",
 
-    "ButtonCard": "All news"
+    "ButtonCard": "All news",
+    "Our_Service": "Our Services",
+
+     "textBlockCard": "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard placeholder for the layout."
 }

@@ -34,7 +34,7 @@ const handleLanguage = () => {
              href="#"
             className="mr-5 text-blue-400 animate-bounce shadow-md text-[10px] font-bold sm:text-[20px] "
           >
-            {t('order', 'Заказать звонок')}
+            {t('order')}
           </a>
         </div>
 
@@ -42,7 +42,7 @@ const handleLanguage = () => {
         <div className="flex mx-2 justify-between items-center my-5 sm:mx-9 2xl:px-4 2xl:mx-24">
           <div>
             <h2 className="ml-3 text-blue-500 text-[12px] tracking-[4px] font-bold uppercase sm:text-[18px] lg:text-[24px]">
-              {t('Humanrightsdefender', 'Правозащитник')}
+              {t('Humanrightsdefender')}
             </h2>
 
             <p className="ml-3 mt-2 text-white font-bold text-sm text-[13px] sm:text-[15px] lg:text-[20px] 2xl:text-[16px]">

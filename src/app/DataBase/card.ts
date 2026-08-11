@@ -1,4 +1,6 @@
+// import { useTranslation } from "react-i18next"
 import type { ICardBlock } from "../components/UI/Cards/BlockCard/lib/types/typeCardBlock"
+
 
 
 const card: ICardBlock[] = [

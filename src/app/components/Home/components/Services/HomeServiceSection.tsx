@@ -9,13 +9,13 @@ const HomeServiceSection = () => {
     <div className="flex flex-col items-center gap-5">
         <div>
           <h2 className="text-[18px] font-bold border-b-4 p-3 border-blue-500 sm:text-[25px] 2xl:text-3xl 2xl:border-b-4">
-            {t('key12', 'Наши услуги')}
+            {t('Our_Service', 'Наши услуги')}
           </h2>
         </div>
 
         <div className="text-center my-5 mx-10 text-[10px] sm:text-[16px] md:mx-20 2xl:w-230">
           <p>
-            {t('loremIpsum2', 'Давно выяснено, что при оценке дизайна и композиции читаемый текст\r\n            мешает сосредоточиться. Lorem Ipsum используют потому, что тот\r\n            обеспечивает более или менее стандартное заполнение шаблона')}
+            {t('textBlockCard', 'Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона')}
           </p>
         </div>
       </div>
