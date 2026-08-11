@@ -1,10 +1,10 @@
 
 import type { ICard } from "./lib/types/typeCardBlock";
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
 
 function Card(cards: ICard) {
-   const { t } = useTranslation()
+  //  const { t } = useTranslation()
 
 
 
