@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next'
 const Header = () => {
   const { i18n, t } = useTranslation()
@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex justify-between items-center sm:px-4 2xl:mx-27">
           <div className="flex items-center gap-2 my-3 sm:gap-5 2xl:my-10">
             <div>
-              <select className="text-white bg-black rounded-[] p-4" onChange={handleLanguage} defaultValue={i18n.language}>
+              <select className="text-white bg-black rounded-[10px] p-4" onChange={handleLanguage} defaultValue={i18n.language}>
                   <option value="en">English<img src="public/flags/en.png" alt="" /></option>
                   <option value="ru">Russian<img src="public/flags/ru.png" alt="" /></option>
                   <option value="tg">Tajik<img src="public/flags/tg.png" alt="" /></option>
@@ -107,37 +107,37 @@ const Header = () => {
             <ul className="flex justify-end items-end flex-col gap-5">
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar')}
+                  {t('navbar.services')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar')}
+                  {t('navbar.aboutFirm')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar')}
+                  {t('navbar.lawers')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar')}
+                  {t('navbar.reviews')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar')}
+                  {t('navbar.news')}
                 </a>
               </li>
 
               <li>
                 <a className=" text-white hover:text-blue-500 lg:text-[25px]" href="#">
-                  {t('navbar')}
+                  {t('navbar.contacts')}
                 </a>
               </li>
             </ul>
