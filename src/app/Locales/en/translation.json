@@ -23,27 +23,27 @@
     "textInfoHeader": "It has long been established that readable text distracts from the evaluation of design and composition. Lorem Ipsum is used because it provides a more or less standard filler.",
     "buttonService": "Our Services",
     "BlockCard": {
-        "1": {
+        "BlockCard_1": {
             "title": "Personal bankruptcy",
             "text": "The personal bankruptcy procedure in Russia is regulated by law."
         },
-        "2": {
+        "BlockCard_2": {
             "title": "Transaction Support",
             "text": "Initiating, structuring, and executing transactions, and achieving results—that is precisely what we do every day."
         },
-        "3": {
+        "BlockCard_3": {
             "title": "Corporate disputes",
             "text": "Corporate disputes are disputes related to the establishment of a legal entity, its management, or participation in it."
         },
-        "4": {
+        "BlockCard_4": {
             "title": "Real Estate and Construction",
             "text": "We provide advice on various real estate matters, including urban planning regulations and land relations."
         },
-        "5": {
+        "BlockCard_5": {
             "title": "Refund of insurance premiums",
             "text": "To obtain a refund of the insurance premium, you must have the policyholder's passport and the original insurance policy ready."
         },
-        "6": {
+        "BlockCard_6": {
             "title": "Tax Law and Disputes",
             "text": "Support during tax audits at any stage, document analysis, and defense in tax disputes."
         }
@@ -58,31 +58,31 @@
     "Our_Lawers": "Our lawers",
     "infoLawers": "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard way to fill a template.",
     "LawersCard": {
-        "1": {
+        "LawersCard_1": {
             "name": "Polina Alekseevna Goryunova",
             "info": "International law attorney"
         },
-        "2": {
+        "LawersCard_2": {
             "name": "Mironov Alexander Germanovich",
             "info": "Credit attorney, banking lawyer"
         },
-        "3": {
+        "LawersCard_3": {
             "name": "Shestakova Elizaveta Egorovna",
             "info": "Legal Consultant"
         },
-        "4": {
+        "LawersCard_4": {
             "name": "Arkhipov Maxim Konstantinovich",
             "info": "Corporate Lawyer"
         }
     },
     "whatSaysAboutUs": "What our clients say about us",
     "ComentersCard": {
-        "1": {
+        "ComentersCard_1": {
             "job": "IT Consulting LLC",
             "name": "Loginova Anastasia",
             "comment": "Many people think that Lorem Ipsum is just a random collection of pseudo-Latin words, but that is not entirely the case. Its roots trace back to a passage of classical Latin from 45 BC—that is, more than two millennia ago."
         },
-        "2": {
+        "ComentersCard_2": {
             "job": "JSC PROMARSH",
             "name": "Sergey Makarov",
             "comment": "If you need Lorem Ipsum for a serious project, you certainly wouldn't want a joke hidden in the middle of a paragraph."
@@ -91,17 +91,17 @@
     "TextImportantMaterial": "Useful Resources",
     "TextImportant": "It has long been established that readable text distracts from focusing on design and composition. Lorem Ipsum is used because it provides a more or less standard way to fill a template.",
     "ImportantMaterialCard": {
-        "1": {
+        "ImportantMaterialCard_1": {
             "name": "A truly joyful sound: the whisper of the perennial leaders.",
             "date": "April 24, 2023",
             "text": "The preliminary conclusions are disappointing: synthetic testing—along with a fresh perspective on familiar matters—undoubtedly opens up new horizons regarding the economic viability of the decisions being made."
         },
-        "2": {
+        "ImportantMaterialCard_2": {
             "name": "A truly joyful sound: the whisper of the perennial leaders.",
             "date": "April 24, 2023",
             "text": "The preliminary conclusions are disappointing: synthetic testing—along with a fresh perspective on familiar matters—undoubtedly opens up new horizons regarding the economic viability of the decisions being made."
         },
-        "3": {
+        "ImportantMaterialCard_3": {
             "name": "The cohesion of the team of professionals continues to amaze.",
             "date": "Feb. 2, 2023",
             "text": "Modern technologies have reached a level where the focus on a socially oriented national project fosters improvements in the conditions that drive such engagement."

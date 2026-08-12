@@ -4,10 +4,10 @@ const Header = () => {
   const { i18n, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false);
 
-const handleLanguage = () => {
-    const newLanguage = i18n.language === "ru" ? "en" : "ru"
-    i18n.changeLanguage(newLanguage)
-  }
+
+  const handleLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  i18n.changeLanguage(e.target.value);
+};
 
   return (
     <header className="min-h-screen bg-[url('public/image/header_back.png')] bg-cover bg-center">
@@ -15,7 +15,12 @@ const handleLanguage = () => {
         <div className="flex justify-between items-center sm:px-4 2xl:mx-27">
           <div className="flex items-center gap-2 my-3 sm:gap-5 2xl:my-10">
             <div>
-              <button onClick={handleLanguage} className="text-white font-bold ">{t("buttonChangeLanguage")}</button>
+              <select className="text-white bg-black rounded-[] p-4" onChange={handleLanguage} defaultValue={i18n.language}>
+                  <option value="en">English<img src="public/flags/en.png" alt="" /></option>
+                  <option value="ru">Russian<img src="public/flags/ru.png" alt="" /></option>
+                  <option value="tg">Tajik<img src="public/flags/tg.png" alt="" /></option>
+              </select>
+
             </div>
             <div className="my-5 ml-5 flex items-center mx-3 gap-3 sm:mx-6 2xl:gap-2">
               <img src="public/icon/phone.png" alt="" />
@@ -54,7 +59,7 @@ const handleLanguage = () => {
           <nav className="hidden 2xl:block xl:ml-130 2xl: ml-210">
             <ul className="flex items-center gap-5">
               <li>
-                <a className=" text-[20px] text-white 2xl:text-[16px] hover:text-blue-500 transition" href="#">
+                <a className=" text-[20px] text-white 2xl:text-[16px] hover:text-blue-500 transition" href="">
                   {t('services')}
                 </a>
               </li>
@@ -66,7 +71,7 @@ const handleLanguage = () => {
               </li>
 
               <li>
-                <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
+                <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="">
                   {t('lawers')}
                 </a>
               </li>
@@ -139,7 +144,7 @@ const handleLanguage = () => {
           </nav>
         )}
         <div className="flex flex-col justify-center items-center text-center min-h-[55vh] my-10 2xl:min-h-[65vh] 2xl:px-4">
-          <h2 className="text-[18px] text-white uppercase sm:text-[25px] md:text-[24px] tracking-[4px] 2xl:text-[35px]">
+          <h2 id="" className="text-[18px] text-white uppercase sm:text-[25px] md:text-[24px] tracking-[4px] 2xl:text-[35px]">
             {t('Weprovidefull')}
           </h2>
 

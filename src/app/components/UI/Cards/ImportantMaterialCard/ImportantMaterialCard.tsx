@@ -1,3 +1,4 @@
+// import { useState } from "react";
 import type { Icomentaters } from "./lib/types/typeImportantMaterialCard";
 import { useTranslation } from 'react-i18next'
 
@@ -5,15 +6,13 @@ import { useTranslation } from 'react-i18next'
 
 
 const ImportantMaterial = (commenter: Icomentaters) => {
-  //  const [curr, setCurr] = useState(0);
-
-  // const prev = () => setCurr((prevCurr) => (prevCurr === 0 ? importantmaterial.length - 1 : prevCurr - 1));
-  // const next = () => setCurr((prevCurr) => (prevCurr === importantmaterial.length - 1 ? 0 : prevCurr + 1));
-
+ 
   const { t } = useTranslation()
 
+  // const [currentIndex, setCurrentIndex] = useState(0)
+
   return (
-    <div className="mx-2 lg:my-15 lg:ml-9 sm:mx-10 2xl:px-4 md:w-120 md:mx-50 xl:w-160 xl:mx-10">
+    <div className="mx-2 lg:my-15 lg:ml-9 sm:mx-10 2xl:px-4 md:w-120 md:mx-50 xl:block xl:w-160 xl:mx-10">
           <div className="shadow-md w-fit lg:shadow-md lg:w-fit lg:p-5">
             <img
               src={commenter.commenter.image}

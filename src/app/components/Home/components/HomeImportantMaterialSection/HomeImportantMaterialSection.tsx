@@ -17,7 +17,8 @@ const HomeImportantMaterialSection = () => {
           {t('TextImportant')}
         </p>
       </div>
-      <div className="mx-3 lg:grid grid-cols-2 lg:grid-cols-2 xl:flex ">
+     <div className="mx-3  lg:grid lg:grid-cols-2 xl:flex xl:flex-row">
+
         {importantMaterial.map((important, i) => (
           <ImportantMaterial commenter={important} key={i}/>
         ))}
