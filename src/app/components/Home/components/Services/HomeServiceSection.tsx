@@ -1,9 +1,33 @@
-import card from "../../../../DataBase/card"
+// import card from "../../../../DataBase/card"
 import BlockCard from "../../../UI/Cards/BlockCard/BlockCard";
+import type { ICardBlock } from "../../../UI/Cards/BlockCard/lib/types/typeCardBlock";
 import { useTranslation } from 'react-i18next'
+import {useState, useEffect} from "react"
 
 const HomeServiceSection = () => {
   const { t } = useTranslation()
+
+
+  
+     const [gets, setGets] = useState<ICardBlock[]>([])
+  
+     const DATA_BASE = "https://jsonplaceholder.typicode.com/posts"
+  
+  
+     useEffect(() => {
+      const fetchApi = async () => {
+        try {
+          const response = await fetch(DATA_BASE)
+          const get = await response.json()
+          const filterPosts = get.filter((i: { id: number }) => i.id < 7)
+          setGets(filterPosts)
+        } catch(e) {
+          console.log("Not found",e)
+        }
+      }
+      fetchApi()
+     },[])
+  
   return (
     <section>
     <div className="flex flex-col items-center gap-5">
@@ -20,8 +44,8 @@ const HomeServiceSection = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
-        {card.map((item_card) => (
-          <BlockCard key={item_card.id} cards={item_card} />
+        {gets.map((item_card, i) => (
+          <BlockCard key={i} cards={item_card} />
         ))}
       </div>
     </section>
@@ -30,4 +54,3 @@ const HomeServiceSection = () => {
 
 export default HomeServiceSection
 
-// Changed a file

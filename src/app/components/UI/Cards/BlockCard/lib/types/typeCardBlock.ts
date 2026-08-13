@@ -1,8 +1,8 @@
 export interface ICardBlock  {
   id: number;
-  icon: string;
+  image: string
   title: string;
-  text: string;
+  body: string;
 }
 
 export interface ICard {

@@ -1,41 +1,43 @@
-import type { ICardBlock } from "../components/UI/Cards/BlockCard/lib/types/typeCardBlock";
+import type {ICardBlock} from "./../components/UI/Cards/BlockCard/lib/types/typeCardBlock"
+
 
 const card: ICardBlock[] = [
   {
     id: 1,
-    icon: "public/icon/agreement.png",
+    image: "public/icon/agreement.png",
     title: "BlockCard.BlockCard_1.title",
-    text: "BlockCard.BlockCard_1.text",
+    body: "BlockCard.BlockCard_1.body"
   },
-  {
+  {     
     id: 2,
-    icon: "public/icon/agreement.png",
+    image: "public/icon/agreement.png",
     title: "BlockCard.BlockCard_2.title",
-    text: "BlockCard.BlockCard_2.text",
+    body: "BlockCard.BlockCard_2.body"
   },
   {
     id: 3,
-    icon: "public/icon/agreement.png",
+    image: "public/icon/agreement.png",
     title: "BlockCard.BlockCard_3.title",
-    text: "BlockCard.BlockCard_3.text",
+    body: "BlockCard.BlockCard_3.body"
+ 
   },
   {
     id: 4,
-    icon: "public/icon/agreement.png",
+     image: "public/icon/agreement.png",
     title: "BlockCard.BlockCard_4.title",
-    text: "BlockCard.BlockCard_4.text",
+    body: "BlockCard.BlockCard_4.body"
   },
   {
     id: 5,
-    icon: "public/icon/agreement.png",
+     image: "public/icon/agreement.png",
     title: "BlockCard.BlockCard_5.title",
-    text: "BlockCard.BlockCard_5.text",
+    body: "BlockCard.BlockCard_5.body"
   },
   {
     id: 6,
-    icon: "public/icon/agreement.png",
+     image: "public/icon/agreement.png",
     title: "BlockCard.BlockCard_6.title",
-    text: "BlockCard.BlockCard_6.text",
+    body: "BlockCard.BlockCard_6.body"
   },
 ];
 

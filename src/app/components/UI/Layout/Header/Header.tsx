@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from 'react-i18next'
 const Header = () => {
   const { i18n, t } = useTranslation()
@@ -16,9 +16,9 @@ const Header = () => {
           <div className="flex items-center gap-2 my-3 sm:gap-5 2xl:my-10">
             <div>
               <select className="text-white bg-black rounded-[10px] p-4" onChange={handleLanguage} defaultValue={i18n.language}>
-                  <option value="en">English<img src="public/flags/en.png" alt="" /></option>
-                  <option value="ru">Russian<img src="public/flags/ru.png" alt="" /></option>
-                  <option value="tg">Tajik<img src="public/flags/tg.png" alt="" /></option>
+                  <option value="en">English</option>
+                  <option value="ru">Russian</option>
+                  <option value="tg">Tajik</option>
               </select>
 
             </div>
