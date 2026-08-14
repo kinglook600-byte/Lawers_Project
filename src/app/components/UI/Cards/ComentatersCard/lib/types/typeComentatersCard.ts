@@ -1,10 +1,7 @@
 export interface IFormCommenters {
     id?: number,
-    image: string,
-    job: string,
-    name: string,
-    icon: string,
-    comment: string
+    title: string,
+    body: string,
 }
 
 export interface IComentatersform {

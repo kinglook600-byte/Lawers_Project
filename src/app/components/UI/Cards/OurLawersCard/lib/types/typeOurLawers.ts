@@ -1,8 +1,9 @@
 export interface ILawers {
-  id?: number,
-  image: string,
-  name: string,
-  info: string
+  id?: number
+  image: string
+  firstName: string
+  lastName: string
+  birthDate: string
 }
 
 export interface Lawersform {
