@@ -1,9 +1,30 @@
 import HomeInfoOurLowers from "../../../UI/Cards/OurLawersCard/OurLowersCard";
-import ourlawers from "../../../../DataBase/ourlawers";
+import type { ILawers } from "../../../UI/Cards/OurLawersCard/lib/types/typeOurLawers";
+
 import { useTranslation } from 'react-i18next'
+import { useState, useEffect } from "react";
 
 const HomeInfoOurLawerSection = () => {
   const { t } = useTranslation()
+  const [gets, setGets] = useState<ILawers[]>([])
+
+useEffect(() => {
+  const getsFetch = async () => {
+    try {
+      const response = await fetch("https://dummyjson.com/users")
+      const getResponse = await response.json()
+      const filterUsers = getResponse.users.filter((i: { id: number }) => i.id < 5)
+      setGets(filterUsers)
+      console.log(filterUsers)
+    } catch (e) {
+      console.error("Not found", e)
+    }
+  }
+
+  getsFetch()
+}, [])
+  
+  
   return (
     <div>
       <div className="flex flex-col items-center justify-center gap-5">
@@ -13,8 +34,8 @@ const HomeInfoOurLawerSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mx:29 xl:flex justify-between">
-        {ourlawers.map((lawers) => (
-        <HomeInfoOurLowers key={lawers.id} lawers={lawers} />
+        {gets.map((lawers, i) => (
+        <HomeInfoOurLowers key={i} lawers={lawers}/>
       ))}
       </div>
     </div>
