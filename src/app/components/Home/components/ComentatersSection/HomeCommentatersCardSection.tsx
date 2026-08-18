@@ -3,21 +3,20 @@ import type {IFormCommenters } from "./../../../UI/Cards/ComentatersCard/lib/typ
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from "react";
 
+const Commenters = import.meta.env.VITE_API_COMMENTERS
+
 const HomeCommentatersCardSection = () => {
-  const [gets, setGets] = useState<IFormCommenters[]>([])
+  const [getsComment, setGetsComment] = useState<IFormCommenters[]>([])
+
 
   useEffect(() => {
-    const getsFetch = async () => {
-      try {
-        const response = await fetch("https://dummyjson.com/posts")
-        const getResponse = await response.json()
-        const commenterFilter = getResponse.posts.filter(( i:{id: number}) => i.id < 3)
-        setGets(commenterFilter)
-      } catch(e) {
-        console.error ("Not found", e)
-      }
+    const getsFetchComment = async () => {
+      const response = await fetch (Commenters)
+      const DataResponse = await response.json()
+      const filterResponse = DataResponse.filter((i: {id: number}) => i.id < 3)
+      setGetsComment(filterResponse)
     }
-    getsFetch()
+    getsFetchComment()
   },[])
 
   const { t } = useTranslation()
@@ -31,7 +30,7 @@ const HomeCommentatersCardSection = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 xl:flex justify-center items-center gap-3">
-        {gets.map((comments, i) => (
+        {getsComment.map((comments, i) => (
           <ComentatersCard key={i} comments={comments} />
         ))}
       </div>

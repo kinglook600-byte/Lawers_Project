@@ -4,29 +4,22 @@ import type { ICardBlock } from "../../../UI/Cards/BlockCard/lib/types/typeCardB
 import { useTranslation } from 'react-i18next'
 import {useState, useEffect} from "react"
 
+const Cards = import.meta.env.VITE_API_CARDS
+
 const HomeServiceSection = () => {
   const { t } = useTranslation()
 
+   const [getCards, setGetCards] = useState<ICardBlock[]>([]);
 
-  
-     const [gets, setGets] = useState<ICardBlock[]>([])
-  
-     const DATA_BASE = "https://jsonplaceholder.typicode.com/posts"
-  
-  
-     useEffect(() => {
-      const fetchApi = async () => {
-        try {
-          const response = await fetch(DATA_BASE)
-          const get = await response.json()
-          const filterPosts = get.filter((i: { id: number }) => i.id < 7)
-          setGets(filterPosts)
-        } catch(e) {
-          console.log("Not found",e)
-        }
-      }
-      fetchApi()
-     },[])
+  useEffect(() => {
+    const fetchCards = async () => {
+      const response = await fetch(Cards)
+      const responseData = await response.json()
+      const filterResponse = responseData.filter((i:{id: number}) => i.id < 7)
+      setGetCards(filterResponse)
+    }
+    fetchCards()
+  }, []);
   
   return (
     <section>
@@ -44,7 +37,7 @@ const HomeServiceSection = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
-        {gets.map((item_card, i) => (
+        {getCards.map((item_card, i) => (
           <BlockCard key={i} cards={item_card} />
         ))}
       </div>
