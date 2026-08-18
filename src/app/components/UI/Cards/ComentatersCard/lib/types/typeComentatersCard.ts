@@ -1,7 +1,8 @@
 export interface IFormCommenters {
-    id?: number,
-    title: string,
-    body: string,
+    id: number,
+    name: string,
+    email: string,
+    body: string
 }
 
 export interface IComentatersform {
