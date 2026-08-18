@@ -1,6 +1,6 @@
 import HomeLawyerInfo from "./components/LawerInfo/HomeLawerInfo";
 
-import HomeInfoOurLawerSection from "./components/HomeInfoOurLawersSection/HomeInfoOurLawerSection";
+import HomeInfoOurLawerSection from "./components/HomeInfoOurLayersSection/HomeInfoOurLayerSection";
 import HomeServiceSection from "./components/Services/HomeServiceSection";
 
 import HomeCommentatersCardSection from "./components/ComentatersSection/HomeCommentatersCardSection";
