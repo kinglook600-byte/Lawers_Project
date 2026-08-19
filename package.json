@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@tanstack/react-router": "^1.170.18",
+    "axios": "^1.19.0",
     "dev-env": "^1.0.4",
     "dotenv": "^17.4.2",
     "i18next": "^26.3.6",

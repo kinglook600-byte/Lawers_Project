@@ -1,1 +1,0 @@
-export const apiLink = "http://api.resmush.it/ws.php?img=http://www.resmush.it/assets/images/jpg_example_original.jpg&qlty=95"
