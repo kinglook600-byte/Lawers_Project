@@ -3,8 +3,7 @@ import BlockCard from "../../../UI/Cards/BlockCard/BlockCard";
 import type { ICardBlock } from "../../../UI/Cards/BlockCard/lib/types/typeCardBlock";
 import { useTranslation } from 'react-i18next'
 import {useState, useEffect} from "react"
-
-const Cards = import.meta.env.VITE_API_CARDS
+import { API_CARDS } from "../../../../config";
 
 const HomeServiceSection = () => {
   const { t } = useTranslation()
@@ -13,10 +12,14 @@ const HomeServiceSection = () => {
 
   useEffect(() => {
     const fetchCards = async () => {
-      const response = await fetch(Cards)
-      const responseData = await response.json()
-      const filterResponse = responseData.filter((i:{id: number}) => i.id < 7)
-      setGetCards(filterResponse)
+      try {
+        const response = await fetch(API_CARDS)
+        const responseData = await response.json()
+        const filterResponse = responseData.filter((i:{id: number}) => i.id < 7)
+        setGetCards(filterResponse)
+      } catch (e) {
+        console.log("Not found", e)
+      }
     }
     fetchCards()
   }, []);

@@ -2,26 +2,30 @@ import ComentatersCard from "../../../UI/Cards/ComentatersCard/ComentatersCard";
 import type {IFormCommenters } from "./../../../UI/Cards/ComentatersCard/lib/types/typeComentatersCard"
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from "react";
-
-const Commenters = import.meta.env.VITE_API_COMMENTERS
+import { API_COMMENTS } from "../../../../config";
 
 const HomeCommentatersCardSection = () => {
   const [getsComment, setGetsComment] = useState<IFormCommenters[]>([])
+   const { t } = useTranslation()
 
 
   useEffect(() => {
     const getsFetchComment = async () => {
-      const response = await fetch (Commenters)
-      const DataResponse = await response.json()
-      const filterResponse = DataResponse.filter((i: {id: number}) => i.id < 3)
-      setGetsComment(filterResponse)
+      try {
+        const response = await fetch (API_COMMENTS)
+        const DataResponse = await response.json()
+        const filterResponse = DataResponse.filter((i: {id: number}) => i.id < 3)
+        setGetsComment(filterResponse)
+      } catch (e) {
+        console.log("Not found", e)
+      }
     }
     getsFetchComment()
-  },[])
+  }, [])
+  
 
-  const { t } = useTranslation()
   return (
-    <div>
+       <div>
       <div className="mx-2 lg:mx-10 2xl:mx-27">
         <div className="flex justify-center items-center flex-col mb-10 2xl:justify-between">
           <h2 className="text-[18px] sm:text-[20px] md:text-[24px] lg:text-[20px]  2xl:text-[25px]">
@@ -35,7 +39,7 @@ const HomeCommentatersCardSection = () => {
         ))}
       </div>
     </div>
-  );
+  )
 };
 
 export default HomeCommentatersCardSection;
