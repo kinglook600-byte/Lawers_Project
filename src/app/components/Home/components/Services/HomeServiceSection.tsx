@@ -3,26 +3,28 @@ import BlockCard from "../../../UI/Cards/BlockCard/BlockCard";
 import type { ICardBlock } from "../../../UI/Cards/BlockCard/lib/types/typeCardBlock";
 import { useTranslation } from 'react-i18next'
 import {useState, useEffect} from "react"
-import { API_CARDS } from "../../../../config";
+import { apiAll } from "../../../../api/client";
+// import { Api_Cards } from "../../../../api/client";
+import { API_ALL } from "../../../../api/client";
 
 const HomeServiceSection = () => {
   const { t } = useTranslation()
 
    const [getCards, setGetCards] = useState<ICardBlock[]>([]);
 
-  useEffect(() => {
-    const fetchCards = async () => {
-      try {
-        const response = await fetch(API_CARDS)
-        const responseData = await response.json()
-        const filterResponse = responseData.filter((i:{id: number}) => i.id < 7)
-        setGetCards(filterResponse)
-      } catch (e) {
-        console.log("Not found", e)
-      }
-    }
-    fetchCards()
-  }, []);
+   useEffect(() => {
+      const getAll = async () => {
+        try {
+          const response = await apiAll.get(`${API_ALL}/users`, {params: {_limit:6}});
+          setGetCards(response.data);
+          console.log(response.data);
+        } catch (error) {
+          console.log('Error fetching all users:', error);
+        }
+      };
+      
+      getAll();
+    }, []);
   
   return (
     <section>

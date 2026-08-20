@@ -2,25 +2,30 @@ import HomeInfoOurLowers from "../../../UI/Cards/OurLawersCard/OurLowersCard";
 import type { ILawers } from "../../../UI/Cards/OurLawersCard/lib/types/typeOurLawers";
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from "react";
-import { API_Lawyer } from "../../../../config";
+// import { API_Lawyer } from "../../../../config";
+// import { userRoutes } from "./../../../../api/userRoutes"
+import { apiAll } from './../../../../api/client';
+// import { Api_lawyer } from "./../../../../api/client";
+import { API_ALL } from "../../../../api/client";
+
 
 const HomeInfoOurLawerSection = () => {
   const { t } = useTranslation()
   const [getsLayers, setGetsLayers] = useState<ILawers[]>([])
 
-  useEffect(() => {
-    const getFetchLawer = async () => {
+   useEffect(() => {
+    const getAll = async () => {
       try {
-        const response = await (API_Lawyer)
-        const DataResponseLayers = await response.json()
-        const filterResponseLayers = await DataResponseLayers.filter((i:{id: number}) => i.id < 5)
-        setGetsLayers(filterResponseLayers)
-      } catch (e) {
-        console.log("Not Found", e)
+        const response = await apiAll.get(`${API_ALL}/posts`, {params: {_limit: 4}});
+        setGetsLayers(response.data);
+      } catch (error) {
+        console.log('Error fetching all users:', error);
       }
-    }
-    getFetchLawer()
-  },[])
+    };
+    
+    getAll();
+  }, []);
+
   
   return (
     <div>
