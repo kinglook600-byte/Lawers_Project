@@ -15,7 +15,7 @@ const HomeServiceSection = () => {
    useEffect(() => {
       const getAll = async () => {
         try {
-          const response = await apiAll.get(`${API_ALL}/users`, {params: {_limit:6}});
+          const response = await apiAll.get(`${API_ALL}/posts`, {params: {_limit:6}});
           setGetCards(response.data);
           console.log(response.data);
         } catch (error) {

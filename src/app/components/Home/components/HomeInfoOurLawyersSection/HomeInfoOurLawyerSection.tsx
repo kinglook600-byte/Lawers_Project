@@ -16,7 +16,7 @@ const HomeInfoOurLawerSection = () => {
    useEffect(() => {
     const getAll = async () => {
       try {
-        const response = await apiAll.get(`${API_ALL}/posts`, {params: {_limit: 4}});
+        const response = await apiAll.get(`${API_ALL}/users`, {params: {_limit: 4}});
         setGetsLayers(response.data);
       } catch (error) {
         console.log('Error fetching all users:', error);

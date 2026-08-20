@@ -1,6 +1,5 @@
-export interface ICardBlock  {
+export interface ICardBlock {
   id: number;
-  image: string
   title: string;
   body: string;
 }

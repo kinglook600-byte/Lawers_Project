@@ -1,13 +1,14 @@
-import { useState } from "react";
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react';
+
 const Header = () => {
   const { i18n, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false);
 
 
   const handleLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-  i18n.changeLanguage(e.target.value);
-};
+    i18n.changeLanguage(e.target.value);
+  };
 
   return (
     <header className="min-h-screen bg-[url('public/image/header_back.png')] bg-cover bg-center">
@@ -16,15 +17,15 @@ const Header = () => {
           <div className="flex items-center gap-2 my-3 sm:gap-5 2xl:my-10">
             <div>
               <select className="text-white bg-black rounded-[10px] p-4" onChange={handleLanguage} defaultValue={i18n.language}>
-                  <option value="en">English</option>
-                  <option value="ru">Russian</option>
-                  <option value="tg">Tajik</option>
+                <option value="en">English</option>
+                <option value="ru">Russian</option>
+                <option value="tg">Tajik</option>
               </select>
 
             </div>
             <div className="my-5 ml-5 flex items-center mx-3 gap-3 sm:mx-6 2xl:gap-2">
               <img src="public/icon/phone.png" alt="" />
-              <p className= " text-white text-[14px] sm:text-[20px] md:text-[23px] 2xl:text-sm 2xl:text-[20px]">
+              <p className=" text-white text-[14px] sm:text-[20px] md:text-[23px] 2xl:text-sm 2xl:text-[20px]">
                 {t('79220229482', '+7 (922) 022-94-82')}
               </p>
             </div>
@@ -36,14 +37,14 @@ const Header = () => {
           </div>
 
           <a
-             href="#"
+            href="#"
             className="mr-5 text-blue-400 animate-bounce shadow-md text-[10px] font-bold sm:text-[20px] "
           >
             {t('order')}
           </a>
         </div>
 
- 
+
         <div className="flex mx-2 justify-between items-center my-5 sm:mx-9 2xl:px-4 2xl:mx-24">
           <div>
             <h2 className="ml-3 text-blue-500 text-[12px] tracking-[4px] font-bold uppercase sm:text-[18px] lg:text-[24px]">
@@ -55,43 +56,31 @@ const Header = () => {
             </p>
           </div>
 
-        
+
           <nav className="hidden 2xl:block xl:ml-130 2xl: ml-210">
             <ul className="flex items-center gap-5">
-              <li>
-                <a className=" text-[20px] text-white 2xl:text-[16px] hover:text-blue-500 transition" href="">
+              <li id="services" className=" text-[20px] text-white 2xl:text-[16px] hover:text-blue-500 transition">
                   {t('services')}
-                </a>
               </li>
 
-              <li>
-                <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition duration-100" href="#">
+              <li id="AboutFirm" className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition duration-100">
                   {t('AboutFirm')}
-                </a>
               </li>
 
-              <li>
-                <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="">
+              <li id="lawers" className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition">
                   {t('lawers')}
-                </a>
               </li>
 
-              <li>
-                <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
+              <li id="reviews" className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition">
                   {t('reviews')}
-                </a>
               </li>
 
-              <li>
-                <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
+              <li id="news" className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" >
                   {t('news')}
-                </a>
               </li>
 
-              <li>
-                <a className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition" href="#">
+              <li id="contacts" className=" text-white text-[20px] 2xl:text-[16px] hover:text-blue-500 transition">
                   {t('contacts')}
-                </a>
               </li>
             </ul>
           </nav>
@@ -177,7 +166,6 @@ const Header = () => {
       </div>
     </header>
   );
-}; 
-// const HeaderTranslation = withTranslation()(Header)
+};
 
 export default Header;

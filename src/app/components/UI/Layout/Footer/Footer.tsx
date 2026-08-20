@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 const Footer = () => {
   const { t } = useTranslation()
+  
   return (
     <footer className="bg-black py-10 px-4">
       <div className="mx-2 xl:flex items-center xl:justify-between border-b-2 border-gray-700 p-4 xl:mx-10 gap-10 my-4">
@@ -14,9 +15,9 @@ const Footer = () => {
         </div>
 
         <div className="hidden lg:block w-210">
-          <p className="hidden lg:block text-white text-base leading-7">
+          <a href='#contacts' className="hidden lg:block text-white text-base leading-7">
             {t('footerText')}
-          </p>
+          </a>
         </div>
       </div>
       <div className="mx-1 lg:flex justify-between items-center lg:gap-40 lg:mx-10 xl:justify-between xl:mt-10 xl:gap-70 p-3 2xl:gap-90">
