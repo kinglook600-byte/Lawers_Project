@@ -1,27 +1,26 @@
 import ComentatersCard from "../../../UI/Cards/ComentatersCard/ComentatersCard";
-import type {IFormCommenters } from "./../../../UI/Cards/ComentatersCard/lib/types/typeComentatersCard"
+import type {IFormCommenters } from "../../../UI/Cards/ComentatersCard/lib/types/typeComentatersCard"
 import { useTranslation } from 'react-i18next'
-import { useState, useEffect } from "react";
-// import { API_COMMENTS } from "../../../../config";
-import { apiAll } from "./../../../../api/client"
-// import { Api_comment } from "./../../../../api/client"; 
-import { API_ALL } from "../../../../api/client";
+import { useState, useEffect} from "react";
+import { getHomeCommentApi } from "../../../../lib/Home/homeRequest";
+
  
 const HomeCommentatersCardSection = () => {
-  const [getsComment, setGetsComment] = useState<IFormCommenters[]>([])
    const { t } = useTranslation()
+    const [getsComment, setGetsComment] = useState<IFormCommenters[]>([]);
 
-   useEffect(() => {
+
+  useEffect(() => {
     const fetchCommentApi = async () => {
       try {
-        const res = await apiAll.get(`${API_ALL}/comments`, {params:{_limit:2}})
-        setGetsComment(res.data)
+        const res = await getHomeCommentApi();
+        setGetsComment(res)
       } catch (error) {
-        console.log(error)
+        console.log("Not found", error)
       }
-    }
+    };
     fetchCommentApi()
-    }, [])  
+  }, []);
 
   return (
        <div>

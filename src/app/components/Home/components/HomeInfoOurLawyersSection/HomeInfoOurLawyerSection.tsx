@@ -2,26 +2,26 @@ import HomeInfoOurLowers from "../../../UI/Cards/OurLawersCard/OurLowersCard";
 import type { ILawers } from "../../../UI/Cards/OurLawersCard/lib/types/typeOurLawers";
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from "react";
-import { apiAll } from './../../../../api/client';
-import { API_ALL } from "../../../../api/client";
-
+// import { getHomeOurLawyers } from "../../../../lib/Home/homeRequest";
+import { useUserStore } from "../../../../store/Home/userStore";
 
 const HomeInfoOurLawerSection = () => {
   const { t } = useTranslation()
   const [getsLayers, setGetsLayers] = useState<ILawers[]>([])
+  const { getHomeOurLawyers } = useUserStore()
 
-   useEffect(() => {
-    const getAll = async () => {
+
+  useEffect(() => {
+    const fetchLawyers = async () => {
       try {
-        const response = await apiAll.get(`${API_ALL}/users`, {params: {_limit: 4}});
-        setGetsLayers(response.data);
+        const res = await getHomeOurLawyers()
+        setGetsLayers(res)
       } catch (error) {
-        console.log('Error fetching all users:', error);
+        console.log("Not found", error)
       }
-    };
-    
-    getAll();
-  }, []);
+    }
+    fetchLawyers()
+  }, [getHomeOurLawyers]);
 
   
   return (
