@@ -2,10 +2,7 @@ import HomeInfoOurLowers from "../../../UI/Cards/OurLawersCard/OurLowersCard";
 import type { ILawers } from "../../../UI/Cards/OurLawersCard/lib/types/typeOurLawers";
 import { useTranslation } from 'react-i18next'
 import { useState, useEffect } from "react";
-// import { API_Lawyer } from "../../../../config";
-// import { userRoutes } from "./../../../../api/userRoutes"
 import { apiAll } from './../../../../api/client';
-// import { Api_lawyer } from "./../../../../api/client";
 import { API_ALL } from "../../../../api/client";
 
 

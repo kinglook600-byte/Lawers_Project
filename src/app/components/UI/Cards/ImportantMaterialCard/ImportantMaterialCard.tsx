@@ -2,14 +2,9 @@
 import type { Icomentaters } from "./lib/types/typeImportantMaterialCard";
 import { useTranslation } from 'react-i18next'
 
-
-
-
 const ImportantMaterial = (commenter: Icomentaters) => {
  
   const { t } = useTranslation()
-
-  // const [currentIndex, setCurrentIndex] = useState(0)
 
   return (
     <div className="mx-2 lg:my-15 lg:ml-9 sm:mx-10 2xl:px-4 md:w-120 md:mx-50 xl:block xl:w-160 xl:mx-10">
